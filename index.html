@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+    <img src="./images/logo.svg" alt="Место" class="header__logo">
+</header>
+<main class="main">
+<section class="profile">
+    <div class="profile__avatar-container">
+        <img class="profile__avatar" src="./images/zhak-iv.jpg" alt="Фото профиля">
+    </div>
+    <div class="profile__info">
+        <div class="profile__container">
+        <h2 class="profile__name">Жак-Ив Кусто</h2>
+        <button type="submit" class="profile__edit-button"></button>
+    </div>
+        <p class="profile__job">Исследователь океана</p>
+    </div>
+    <button type="button" class="profile__add-button"></button>
+</section>
+<section class="elements">
+    <div class="element">
+        <img src="./images/kezenoy-am.jpeg" class="element__image" alt="Кезеной-Ам">
+        <div class="element__container">
+            <h2 class="element__title">Кезеной-Ам</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    <div class="element">
+        <img src="./images/galanchozh.jpg" class="element__image" alt="Галанчож">
+        <div class="element__container">
+            <h2 class="element__title">Галанчож</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    <div class="element">
+        <img src="./images/ushkaloy.jpeg" class="element__image" alt="Ушкалой">
+        <div class="element__container">
+            <h2 class="element__title">Ушкалой</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    <div class="element">
+        <img src="./images/erzi.jpeg" class="element__image" alt="Эрзи">
+        <div class="element__container">
+            <h2 class="element__title">Эрзи</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    <div class="element">
+        <img src="./images/gorod-mertvyh.jpeg" class="element__image" alt="Город Мертвых">
+        <div class="element__container">
+            <h2 class="element__title">Город Мертвых</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    <div class="element">
+        <img src="./images/sarykum.jpeg" class="element__image" alt="Бархан Сарыкум">
+        <div class="element__container">
+            <h2 class="element__title">Бархан Сарыкум</h2>
+            <button type="button" class="element__like"></button>
+        </div>
+    </div>
+    </section>
+</main>
+<footer class="footer">
+    <p class="footer__copyright">&#169; 2022 Мансур Талгаев</p>
+</footer>
+<div id="popup" class="popup">
+        <form class="popup__container" novalidate="" method="post" name="form-popup">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <input name="name-input" value="" class="popup__input popup__input_name" type="text" placeholder="Имя">
+            <input name="job-input" value="" class="popup__input popup__input_job" type="text" placeholder="Описание">
+            <button class="popup__button popup__button_close" type="button" value="close"></button>
+            <button class="popup__button popup__button_save" type="submit" value="save">Сохранить</button>
+        </form>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>

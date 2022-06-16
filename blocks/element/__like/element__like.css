@@ -1,0 +1,16 @@
+.element__like {
+  width: 22px;
+  height: 19px;
+  background-color: transparent;
+  background-image: url("../../../images/like-disable.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  align-self: center;
+  border: none;
+  padding: 0;
+}
+
+.element__like:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
